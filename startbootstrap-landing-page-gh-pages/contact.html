@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  
+    <head>
+  
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Halcyon brand is created to introduce and promote a new line of natural ingredient skincare products under the our brand name ">
+      <meta name="author" content="@ratana, @Irene">
+  
+      <title>HALCYON- Landing Page</title>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+      <!-- Custom fonts for this template -->
+      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  
+      <!-- Custom styles for this template -->
+      <link href="css/landing-page.min.css" rel="stylesheet">
+  
+    </head>
+    <body>
+      
+      <!-- Navigation -->
+      <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><big><b>HALCYON</b></big></a>
+          <a class="" href="#">Shop by Skin Concern</a>
+          <a class="" href="#">Shop by Product</a>
+          <style>
+              .dropbtn {
+                  background-color white;
+                  color: black;
+                  padding: 16px;
+                  font-size: 16px;
+                  border: none;
+                  cursor: pointer;
+              }
+              
+              .dropbtn:hover, .dropbtn:focus {
+                  background-color: #6d756d;
+              }
+              #myInput {
+                  border-box: box-sizing;
+                  background-image: url('searchicon.png');
+                  background-position: 14px 12px;
+                  background-repeat: no-repeat;
+                  font-size: 16px;
+                  padding: 14px 20px 12px 45px;
+                  border: none;
+              }
+              
+              .dropdown {
+                  position: relative;
+                  display: inline-block;
+              }
+              
+              .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: #f6f6f6;
+                  min-width: 230px;
+                  overflow: auto;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1;
+              }
+              
+              .dropdown-content a {
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+              }
+              
+              .dropdown a:hover {background-color: #ddd}
+              
+              .show {display:block;}
+              </style>
+              </head>
+              <body>
+              
+              <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Search</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  <a href="about.html">About Us</a>
+                  <a href="skincare.html">Skincare 101</a>
+                  <a href="blog2.html">Blog</a>
+                  <a href="contact.html">Contact Us</a>
+                  <a href="helpInfo.html">Help+Info</a>
+                  <a href="followUs.html">Follow us</a>
+                  <a href="signUp.html">Sign up for our newsletter</a>
+                </div>
+              </div>
+              
+              <script>
+              /* When the user clicks on the button,
+              toggle between hiding and showing the dropdown content */
+              function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+              }
+              
+              function filterFunction() {
+                  var input, filter, ul, li, a, i;
+                  input = document.getElementById("myInput");
+                  filter = input.value.toUpperCase();
+                  div = document.getElementById("myDropdown");
+                  a = div.getElementsByTagName("a");
+                  for (i = 0; i < a.length; i++) {
+                      if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                          a[i].style.display = "";
+                      } else {
+                          a[i].style.display = "none";
+                      }
+                  }
+              }
+              </script>
+              
+              </body>
+        
+        </div>
+      </nav>
+    <DIV CLASS="CONTAINER">
+
+      <DIV CLASS="BG-FADED P-4 MY-4">
+        <HR CLASS="DIVIDER">
+        <H2 CLASS="TEXT-CENTER TEXT-LG TEXT-UPPERCASE MY-0">Contact
+          <STRONG>HALCYON</STRONG>
+        </H2>
+        <HR CLASS="DIVIDER">
+        <DIV CLASS="ROW">
+          <DIV CLASS="COL-LG-8">
+            <DIV CLASS="EMBED-RESPONSIVE EMBED-RESPONSIVE-16BY9 MAP-CONTAINER MB-4 MB-LG-0">
+              <IFRAME FRAMEBORDER="0" SCROLLING="NO" MARGINHEIGHT="0" MARGINWIDTH="0" SRC="https://www.google.ca/maps/place/305+King+St+W,+Toronto,+ON+M5V+1J5/@43.6461577,-79.3925237,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34d0bf19a9fb:0xe2917c5069fb9ff8!8m2!3d43.6461538!4d-79.3903404"></IFRAME>
+            </DIV>
+          </DIV>
+          <DIV CLASS="COL-LG-4">
+            <H5 CLASS="MB-0">PHONE:</H5>
+            <DIV CLASS="MB-4">416.394.5545</DIV>
+            <H5 CLASS="MB-0">EMAIL:</H5>
+            <DIV CLASS="MB-4">
+              <A HREF="MAILTO:NAME@EXAMPLE.COM">Halcyon@gmail.com</A>
+            </DIV>
+            <H5 CLASS="MB-0">RETURN ADDRESS:</H5>
+            <DIV CLASS="MB-4">
+              305 King Street West, 
+              <BR>
+              Toronto, ON M5V 1J5
+            </DIV>
+          </DIV>
+        </DIV>
+      </DIV>
+
+      <DIV CLASS="BG-FADED P-4 MY-4">
+        <HR CLASS="DIVIDER">
+        <H2 CLASS="TEXT-CENTER TEXT-LG TEXT-UPPERCASE MY-0">CONTACT
+          <STRONG>FORM</STRONG>
+        </H2>
+        <HR CLASS="DIVIDER">
+        <FORM>
+          <DIV CLASS="ROW">
+            <DIV CLASS="FORM-GROUP COL-LG-4">
+              <LABEL CLASS="TEXT-HEADING">NAME</LABEL>
+              <INPUT TYPE="TEXT" CLASS="FORM-CONTROL">
+            </DIV>
+            <DIV CLASS="FORM-GROUP COL-LG-4">
+              <LABEL CLASS="TEXT-HEADING">EMAIL ADDRESS</LABEL>
+              <INPUT TYPE="EMAIL" CLASS="FORM-CONTROL">
+            </DIV>
+            <DIV CLASS="FORM-GROUP COL-LG-4">
+              <LABEL CLASS="TEXT-HEADING">PHONE NUMBER</LABEL>
+              <INPUT TYPE="TEL" CLASS="FORM-CONTROL">
+            </DIV>
+            <DIV CLASS="CLEARFIX"></DIV>
+            <DIV CLASS="FORM-GROUP COL-LG-12">
+              <LABEL CLASS="TEXT-HEADING">MESSAGE</LABEL>
+              <TEXTAREA CLASS="FORM-CONTROL" ROWS="6"></TEXTAREA>
+            </DIV>
+            <DIV CLASS="FORM-GROUP COL-LG-12">
+              <BUTTON TYPE="SUBMIT" CLASS="BTN BTN-SECONDARY">SUBMIT</BUTTON>
+            </DIV>
+          </DIV>
+        </FORM>
+      </DIV>
+
+    </DIV>
+    <!-- /.CONTAINER -->
+
+    <FOOTER CLASS="BG-FADED TEXT-CENTER PY-5">
+      <DIV CLASS="CONTAINER">
+        <P CLASS="M-0">COPYRIGHT &COPY; HALCYON 2017</P>
+      </DIV>
+    </FOOTER>
+
+    <!-- BOOTSTRAP CORE JAVASCRIPT -->
+    <SCRIPT SRC="VENDOR/JQUERY/JQUERY.MIN.JS"></SCRIPT>
+    <SCRIPT SRC="VENDOR/BOOTSTRAP/JS/BOOTSTRAP.BUNDLE.MIN.JS"></SCRIPT>
+
+    <!-- ZOOM WHEN CLICKED FUNCTION FOR GOOGLE MAP -->
+    <SCRIPT>
+      $('.MAP-CONTAINER').CLICK(FUNCTION () {
+        $(THIS).FIND('IFRAME').ADDCLASS('CLICKED')
+      }).MOUSELEAVE(FUNCTION () {
+        $(THIS).FIND('IFRAME').REMOVECLASS('CLICKED')
+      });
+    </SCRIPT>
+
+  </BODY>
+
+</HTML>

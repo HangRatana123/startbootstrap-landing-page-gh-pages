@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Halcyon brand is created to introduce and promote a new line of natural ingredient skincare products under the our brand name ">
+    <meta name="author" content="@ratana, @Irene">
+
+    <title>HALCYON- Landing Page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><big><b>HALCYON</b></big></a>
+        <a class="" href="#">Shop by Skin Concern</a>
+        <a class="" href="#">Shop by Product</a>
+        <style>
+            .dropbtn {
+                background-color white;
+                color: black;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #6d756d;
+            }
+            #myInput {
+                border-box: box-sizing;
+                background-image: url('searchicon.png');
+                background-position: 14px 12px;
+                background-repeat: no-repeat;
+                font-size: 16px;
+                padding: 14px 20px 12px 45px;
+                border: none;
+            }
+            
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f6f6f6;
+                min-width: 230px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            .dropdown a:hover {background-color: #ddd}
+            
+            .show {display:block;}
+            </style>
+            </head>
+            <body>
+            
+            <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Search</button>
+              <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="about.html">About Us</a>
+                <a href="skincare.html">Skincare 101</a>
+                <a href="blog2.html">Blog</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="helpInfo.html">Help+Info</a>
+                <a href="followUs.html">Follow us</a>
+                <a href="signUp.html">Sign up for our newsletter</a>
+              </div>
+            </div>
+            
+            <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+            
+            </body>
+      
+      </div>
+    </nav>
+      <DIV CLASS="CONTAINER">
+
+      <DIV CLASS="BG-FADED P-4 MY-4">
+        <HR CLASS="DIVIDER">
+        <H2 CLASS="TEXT-CENTER TEXT-LG TEXT-UPPERCASE MY-0">FOLLOW
+          <STRONG>HALCYON</STRONG>
+        </H2>
+        <HR CLASS="DIVIDER">
+        <DIV CLASS="ROW">
+          <DIV CLASS="COL-LG-6">
+            <IMG CLASS="IMG-FLUID MB-4 MB-LG-0" SRC="IMG/SLIDE-2.JPG" ALT="">
+          </DIV>
+          <DIV CLASS="COL-LG-6">
+          <P>You can connect with us on Social Media through our <a href="https://twitter.com/Halcyon"> Twitter</a> ,<a href="https://www.facebook.com/Halcyon"> Facebook</a> ,and<a href="https://www.instagram.com/Halcyon"> Instagram</a>. We love to hear from tou about your experiences, send over your beauty hauls, favourite products, reviews, videos or photos and we will be sure to reach out.</P>
+    

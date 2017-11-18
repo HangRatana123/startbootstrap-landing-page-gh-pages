@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Halcyon brand is created to introduce and promote a new line of natural ingredient skincare products under the our brand name ">
+    <meta name="author" content="@ratana, @Irene">
+
+    <title>HALCYON- Landing Page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><big><b>HALCYON</b></big></a>
+        <a class="" href="#">Shop by Skin Concern</a>
+        <a class="" href="#">Shop by Product</a>
+        <style>
+            .dropbtn {
+                background-color white;
+                color: black;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #6d756d;
+            }
+            #myInput {
+                border-box: box-sizing;
+                background-image: url('searchicon.png');
+                background-position: 14px 12px;
+                background-repeat: no-repeat;
+                font-size: 16px;
+                padding: 14px 20px 12px 45px;
+                border: none;
+            }
+            
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f6f6f6;
+                min-width: 230px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            .dropdown a:hover {background-color: #ddd}
+            
+            .show {display:block;}
+            </style>
+            </head>
+            <body>
+            
+            <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Search</button>
+              <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="about.html">About Us</a>
+                <a href="skincare.html">Skincare 101</a>
+                <a href="blog2.html">Blog</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="helpInfo.html">Help+Info</a>
+                <a href="followUs.html">Follow us</a>
+                <a href="signUp.html">Sign up for our newsletter</a>
+              </div>
+            </div>
+            
+            <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+            
+            </body>
+      
+      </div>
+    </nav>
+    
+  </body>
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">Get the best of Beauty blogs delivered to you once a week</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Icons Grid -->
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <h3>Fully Responsive</h3>
+              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-layers m-auto text-primary"></i>
+              </div>
+              <h3>Bootstrap 4 Ready</h3>
+              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <h3>Easy to Use</h3>
+              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/A2EUQ1WTGCTBG2/A2ITVQXVLEC8P/B00PGOFYG0/sEnyfDyQ425._UX850_TTW__.jpg" alt="Image result for klairs toner" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" width="20" height="20" style="margin-top: 80px;);"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Klairs Facial Toner</h2>
+            <p class="lead mb-0">Prep your skin with this refreshing toner that removes excess dirt and sebum while restoring pH balance. Amino acids reduce irritation and provide deep hydration. Toner is the essential first step in any moisturizing regimen. It preps your skin to absorb the next step in your skincare regimen: essence.</p>
+        <h4>sizes</h4>
+        <div class="sizes">
+            <span>6.08 oz / 180 ml</span>
+            <span class="country"><br>Product of Korea</span>
+        </div>
+        <a href="https://sokoglam.com/products/klairs-supple-preparation-facial-toner-180ml" target="_blank" class="link-shop" data-color="#ff4f59">
+            <div class="overlay-color"></div>
+            <span>S</span>
+            <span>h</span>
+            <span>o</span>
+            <span>p</span>
+        </a>
+    </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('https://cdn.shopify.com/s/files/1/0249/1218/products/Klairs-rich-moist-foaming-cleanser_1024x1024.jpg?v=1498761344');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Klairs Foaming Cleanser</h2>
+            <p class="lead mb-0">This lightweight, hydrating cleanser is perfect for everyone. If you have dry skin, this cleanser will change your mind about foaming cleansers. This unique cleanser uses an amino acid formula instead of a sodium lauryl sulfate one, which makes sure that the foam won't dry out skin and leave it feeling tight. It's great for sensitive skin too, thanks to hyaluronic acid and aloe leaf extract that nourish and calm skin. If you have acne-prone skin, you'll love the tea tree leaf oil that fights breakouts and helps you achieve clearer skin. All in all, if you're looking for a gentle foaming cleanser that thoroughly cleanses skin without stripping skin of moisture, this cleanser is the one to try!</p>
+            <h4>sizes</h4>
+            <div class="sizes">
+                <span>3.38 oz / 100 ml</span>
+                <span><br>For all skin types, especially sensitive skin</span>
+                <span class="country"> <br>Product of Korea</span>
+            </div>
+            <a href="https://sokoglam.com/products/klairs-rich-moist-foaming-cleanser">
+                <div class="overlay-color"></div>
+                <span>S</span>
+                <span>h</span>
+                <span>o</span>
+                <span>p</span>
+            </a>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://multibendybeauty.files.wordpress.com/2017/06/19403465_10211958773778310_738698462_o.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Innisfree sheet masks</h2>
+            <p class="lead mb-0">It's Real Squeeze Mask Collection (15 sheets) that provides a customized solution suited to various skin concerns with freshly squeezed natural ingredients.
+                Pomegranate, Strawberry, Lime, Manuka honey, Kiwi, Green Tea, Tea tree, Bija, Cucumber, Aloe, Bamboo, Rose, Shea butter, Acai Berry, Black berry
+                The Jeju green complex consists of green tea, tangerine, cactus, camellia leaves, and orchids to keep your skin healthy.
+                With its high water-retention capability, this triple-layered sheet fits tightly over the skin and helps it stay hydrated for an extended period.</p>
+                <span class="country"> <br>Product of Korea</span>
+              <a href="http://www.innisfreeworld.com/product/productList.do?catCd01=UA&catCd02=UAEE&catCd03=UAEEBB">
+                  <div class="overlay-color"></div>
+                  <span>S</span>
+                  <span>h</span>
+                  <span>o</span>
+                  <span>p</span>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">What people are saying...</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+              <h5>Margaret E.</h5>
+              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+              <h5>Fred S.</h5>
+              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+              <h5>Sarah	W.</h5>
+              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="mb-4"> Sign up now for future update about the products!</h2>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="skincare.html">Skincare 101</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="helpInfo.html">Help+Info</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="blog1.html">Blog(list View)</a>
+            </li>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="blog2.html">Blog(detail view)</a>
+          </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; HALCYON 2017. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
